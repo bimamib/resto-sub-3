@@ -1,0 +1,116 @@
+/* Minimal layar ukuran sedang */
+@media screen and (min-width: 700px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 10px;
+  }
+
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+ 
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  #restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+ 
+  .restaurant-list__header__image {
+    width: 100%;
+    height: 20vw;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-size: 26px;
+  }
+
+  .hero__tagline {
+    font-size: 18px;
+  }
+
+  .restaurant-list__content p {
+    font-size: 18px;
+  }
+
+  .restaurant-list__content h3 a {
+    font-size: 22px;
+  }
+}
+ 
+@media screen and (min-width: 850px) {
+  .restaurant__info #menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #restaurants {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Minimal layar ukuran besar */
+
+@media screen and (min-width: 1200px) {
+  #restaurants {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .hero {
+    min-width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #restaurants {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Maksimal layar ukuran kecil */
+@media screen and (max-width: 700px) {
+  h2.restaurant_name {
+    font-size: 26px;
+  }
+  
+  .restaurant__info #menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .restaurant__info #menu h4 {
+    font-size: 18px;
+  }
+  
+  .restaurant__info .review-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}

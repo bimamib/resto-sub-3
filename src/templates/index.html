@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b47904"/>
+  <meta name="description" content="Find a variety of restaurants that you like here, invite your family to try visiting restaurants in various regions in Indonesia.">
+
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="manifest" href="./app.webmanifest">
+  <link rel="icon" href="./favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"> 
+  
+  <title>Restaurant Apps</title>
+  <!-- <script src="https://use.fontawesome.com/b070c8f1df.js"></script> -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  
+</head>
+<body>
+  <a href="#mainContent" class="skip-content">Menuju Ke Konten</a>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button aria-label="hamburger" id="hamburgerButton">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+    <div class="app-bar__brand">
+      <h1><span>Savory</span> Spot</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/favorite">Favorite</a></li>
+        <li><a href="https://www.instagram.com/bimamib_16/">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero-jumbotron">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./images/hero-image_4-small.jpg">
+      <img src='./images/hero-image_4-large.jpg' 
+           alt="hero-jumbotron">
+    </picture>
+    <div class="hero__inner">
+      <h1 class="hero__title">Semua dalam satu Restaurant</h1>
+      <p class="hero__tagline">Disinilah Tempat-Tempat Makan yang unik Di Dunia</p>
+    </div>
+  </div>
+   
+  <main id="mainContent">
+    <section class="restaurant-content">
+      <h1 class="judul">Temukan Berbagai Restaurant Disini</h1>
+      <div class="post"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2023 - Savory Spot</p>
+  </footer>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
